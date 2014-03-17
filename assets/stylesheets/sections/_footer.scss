@@ -1,3 +1,11 @@
-footer._footer {
-
+#Footer {
+ width: 90%;
+ padding:2% 5%;
+ background-color:$color1;
+ color: $color4;
+ text-align: center;
+ float: left;
+  a {
+  	color: $color4;
+  }
 }

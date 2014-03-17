@@ -1,23 +1,103 @@
+body { 
+	font-family: Arial, Helvetica, sans-serif;	
+	
+	}
 header._header {
 	background-color: $color1;
-	 a {
-  	color: $color2;
+	 
   	div#TopMenu {
   		position: relative;
-  		.bot{
-  		width: 20px;
-  		height: 20px;
-  		float: right;
-  		background-color: $color2;
-  		position: absolute;
-  		bottom: 0;
-  	}
-
-  	}
+  		ul {
+  			margin-top: 5px;
+  			padding: 0;
+  			li {
+  				list-style: none;
+  				list-style-position: inside;
+  				width: 94%;
+  				padding:0 2%;
+  				display: block;
+  				border-bottom: dotted 1px $color3;
+  				a{
+  					color: #fff;
+  					text-decoration: none;
+  				}
+  			}
+  		}
+  		.bot {
+			width: 60px;
+			float: right;
+			background-image: url("/_moovweb_local_assets_/images/sprites.png");
+			background-position: 0px -638px;
+			margin-top: -34px;
+			margin-right: 5px;
+			height: 34px;
+			}
+		.bot[data-ur-state="enabled"] {
+		margin-top: -39px;
+		}
+    }
+  a {
+  	color: $color2;
   }
   #Header {
+  	#Logo {
+		background-image: url('http://developer.moovweb.com/assets/tutorials/building_a_site/home_cropped.png');
+		text-indent: -2000px;
+		width: 100%;
+		min-height: 39px;
+		background-position: 0px -4px;
+		background-size: 100%;
+		h1 {
+			margin:0;
+		}
+		a.bot1 {
+			float: right;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: 11px;
+			top: 0;
+			text-indent: -2000px;
+		 }
+		 a.bot2 {
+		 	right: 55px;
+		 	float: right;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 0;
+			text-indent: -2000px;
+		 }
+		}
+  .sprites-search {
+  width: 98%;
+  padding:1%;
+  @include background(linear-gradient(top, #852201, #6a1b00));
+  
+}
   #SearchForm {
-    @include background(linear-gradient(top, #852201, #6a1b00));
+	background-image: url("/_moovweb_local_assets_/images/sprites.png");
+	background-position: 188px -775px;
+	height: 35px;
+	width: 250px;
+	float: left;
+
+    //Style for the placeholder
+    label {
+    	display: none
+    }
+  
+    input[type=image]{
+    	opacity: 0;
+    	width: 40px;
+    	height: 21px;
+    }
+    input[type=text]{
+    	width: 180px;
+    	border	: solid 1px #333;
+    	height: 20px;
+    	padding: 5px;
+    }
 
   }
 }

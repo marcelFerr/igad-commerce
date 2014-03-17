@@ -1,5 +1,69 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
 ._home {
-  
+	margin:0;
+	padding:0;
+
+  ul[data-ur-carousel-component="scroll_container"] > * {
+    display: inline-block;
+    float: left;
+  }
+ #Container {
+ 	#Outer {
+ 		#Wrapper {
+ 			.Content {
+ 				.Block {
+ 					h2 {
+ 						text-align: center;
+ 					}
+ 					.add-top {
+ 						width: 100%;
+ 						float: left;
+ 						margin-top: 10px;
+ 					}
+ 					.BlockContent {
+ 						ul {
+ 							li {
+ 								div.QuickViewBtn {
+ 									opacity: 0;
+ 								}
+ 								div {
+ 									float: left;
+ 									width: 90%;
+ 									padding: 0 5%;
+
+ 									}
+
+ 								.ProductDetails {
+ 									height: auto !important;
+ 									 a {
+										color: $color1;
+										text-decoration: none;
+										line-height: 1em;
+										height: 30px;
+										overflow: hidden;
+										float: left
+										}
+ 								}
+ 								.ProductActionAdd {
+ 									a {
+ 										background-color: $color1;
+ 										color: $color4;
+ 										text-decoration: none;
+ 										font-weight: bold;
+ 										padding: 4px 8px;
+ 										border-radius: 5px;
+ 										text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+ 										box-shadow: 1px 1px 1px rgba(0,0,0,.7);
+ 									}
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
 }
