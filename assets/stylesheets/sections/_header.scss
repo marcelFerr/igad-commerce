@@ -1,3 +1,25 @@
 header._header {
-  
+	background-color: $color1;
+	 a {
+  	color: $color2;
+  	div#TopMenu {
+  		position: relative;
+  		.bot{
+  		width: 20px;
+  		height: 20px;
+  		float: right;
+  		background-color: $color2;
+  		position: absolute;
+  		bottom: 0;
+  	}
+
+  	}
+  }
+  #Header {
+  #SearchForm {
+    @include background(linear-gradient(top, #852201, #6a1b00));
+
+  }
+}
+
 }
