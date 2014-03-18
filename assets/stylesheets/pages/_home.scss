@@ -8,6 +8,39 @@
     display: inline-block;
     float: left;
   }
+  .modalContainer {
+  	position: fixed !important;
+  	z-index: 3100 !important;
+  	width: 86% !important;
+  	margin-left: 0px !important;
+  	top: 0px !important;
+  	background-color: #efefef !important;
+  	margin: 5% !important;
+  	padding: 2% !important;
+  	border-radius: 10px !important;
+  	border:solid 1px #ccc;
+  	img {
+  		border:solid 1px #ccc;
+  	}
+  	h2{
+  		font-size: 1em;
+  	}
+  	a {
+  		color:$color1;
+  	}
+  	.fastCartBottom {
+  		display: none;
+  	}
+  	.modalClose {
+  		background-color: $color1;
+  		color: $color4;
+  		padding: 5px;
+  		font-weight: bold;
+  		float: right;
+  		text-align: center;
+  		border-radius: 4px;
+  	}
+  }
  #Container {
  	#Outer {
  		#Wrapper {
@@ -47,14 +80,14 @@
  								}
  								.ProductActionAdd {
  									a {
+ 									
  										background-color: $color1;
  										color: $color4;
  										text-decoration: none;
  										font-weight: bold;
  										padding: 4px 8px;
  										border-radius: 5px;
- 										text-shadow: 1px 1px 1px rgba(0,0,0,.7);
- 										box-shadow: 1px 1px 1px rgba(0,0,0,.7);
+ 										@include shadow();
  									}
  								}
  							}

@@ -7,3 +7,8 @@ $color1: #B03B01; // header color
 $color2: #075899; // link color
 $color3: #82340D; // border color
 $color4: #fff; // text White
+@mixin shadow(){
+    box-shadow: 1px 1px 1px rgba(0,0,0,.7);
+
+	text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
