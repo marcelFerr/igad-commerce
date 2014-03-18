@@ -22,7 +22,6 @@
  		$('.//div[@id="CategoryBreadcrumb"]') { remove() }
  		$('.//span[contains(@class, "FeedLink")]') {
  			remove()
- 		}
- 		
+ 		}	
  	}
- }
+}
