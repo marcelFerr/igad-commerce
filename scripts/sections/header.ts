@@ -5,7 +5,8 @@
  			remove()
  		}
 		$('./div[@id="SearchForm"]') {
-			wrap("div", class: "mw_search_btn sprites-search")
+			add_class("sprites-search")
+			wrap("div", class: "mw_search_btn search")
 			$('./p') {
 			    remove();
 			}
@@ -24,18 +25,18 @@
 				attribute("data-ur-toggler-component","content")
 				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideCategoryList"]/div[@class="BlockContent"]/div[@class="SideCategoryListClassic"]/ul[@class="category-list"]/li', 'top')
 				//move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideShopByBrand"]/div[@class="BlockContent"]/ul/li', 'bottom')
-				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Menu"]/ul/li', 'top 	')
+				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Menu"]/ul/li', 'top')
 				$('./li[@class="First"]/a') {
 					move_to('ancestor::body/header[@class="_header"]/div[@id="Header"]/div[@id="Logo"]')
-					add_class("bot1")
+					add_class("bot1 sprites-user")
 				}
 				$('./li[@class="CartLink"]/a') {
 					move_to('ancestor::body/header[@class="_header"]/div[@id="Header"]/div[@id="Logo"]')
-					add_class("bot2")
+					add_class("bot2 sprites-cart")
 				}
 			}
 			insert_top("div","") {
-				add_class("bot")
+				add_class("bot sprites-menu-on")
 				attribute("data-ur-toggler-component","button")
 			}
 			$('./br[@class="Clear"]') {
