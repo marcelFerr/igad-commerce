@@ -9,6 +9,15 @@ $color3: #82340D; // border color
 $color4: #fff; // text White
 @mixin shadow(){
     box-shadow: 1px 1px 1px rgba(0,0,0,.7);
-
 	text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+@mixin txt-shadow(){
+	text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+@mixin grad-bg(){
+	background: -webkit-linear-gradient(top, #c14102 0, #9a3401 100%);
+	background: -moz-linear-gradient(top, #c14102 0, #9a3401 100%);
+	background: -ms-linear-gradient(top, #c14102 0, #9a3401 100%);
+	background: -o-linear-gradient(top, #c14102 0, #9a3401 100%);
+	background: linear-gradient(top, #c14102 0, #9a3401 100%);
 }

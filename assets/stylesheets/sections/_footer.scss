@@ -1,11 +1,13 @@
 #Footer {
  width: 90%;
  padding:2% 5%;
- background-color:$color1;
+ @include grad-bg();
  color: $color4;
  text-align: center;
  float: left;
+ @include txt-shadow();
   a {
   	color: $color4;
+  	@include txt-shadow();
   }
 }

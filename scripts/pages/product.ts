@@ -1,5 +1,8 @@
  $('./body') {
  	attribute("class", "_product")
+ 	$('.//div[contains(@class,"QuickView")]') {
+ 					attribute("class","none")
+ 					}
  
  $('.//div[@id="ProductReviews"]') {
  	remove()
@@ -24,5 +27,11 @@
  			}
  		}
  		
+ 	}
+ 	$('.//a[@id="ImageScrollNext"]') {
+ 		remove()
+ 	}
+ 	$('.//hr') {
+ 		remove()
  	}
  }

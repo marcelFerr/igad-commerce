@@ -10,7 +10,7 @@
 			    remove();
 			}
 			$('.//input[@type="text"]') {
-				attribute("value", "Search...")
+				attribute("placeholder", "Search...")
 			}
 		}
 		}
@@ -22,9 +22,9 @@
 			attribute("data-ur-set","toggler")
 			$('./ul') {
 				attribute("data-ur-toggler-component","content")
-				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideCategoryList"]/div[@class="BlockContent"]/div[@class="SideCategoryListClassic"]/ul[@class="category-list"]/li', 'bottom')
-				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideShopByBrand"]/div[@class="BlockContent"]/ul/li', 'bottom')
-				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Menu"]/ul/li', 'bottom')
+				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideCategoryList"]/div[@class="BlockContent"]/div[@class="SideCategoryListClassic"]/ul[@class="category-list"]/li', 'top')
+				//move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Wrapper"]/div[@id="LayoutColumn1"]/div[@id="SideShopByBrand"]/div[@class="BlockContent"]/ul/li', 'bottom')
+				move_here('ancestor::body/div[@id="Container"]/div[@id="Outer"]/div[@id="Menu"]/ul/li', 'top 	')
 				$('./li[@class="First"]/a') {
 					move_to('ancestor::body/header[@class="_header"]/div[@id="Header"]/div[@id="Logo"]')
 					add_class("bot1")

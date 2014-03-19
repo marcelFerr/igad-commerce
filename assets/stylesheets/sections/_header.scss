@@ -2,6 +2,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;	
 	margin:0;
 	padding:0;
+	
+	}
+	div.none {
+		min-height: 120px;
+		float: left;
 	}
 header._header {
 	background-color: $color1;
@@ -11,6 +16,7 @@ header._header {
   		ul {
   			margin-top: 5px;
   			padding: 0;
+  			background-color:#EBDAD1;;
   			li {
   				list-style: none;
   				list-style-position: inside;
@@ -18,9 +24,17 @@ header._header {
   				padding:0 2%;
   				display: block;
   				border-bottom: dotted 1px $color3;
+  				background-color: #EBDAD1;
   				a{
-  					color: #fff;
+  					color: #82340d;
   					text-decoration: none;
+  				}
+  			}
+  			li.ActivePage {
+  					background-color: #82340d;
+  				a{
+  					color: #EBDAD1;
+  					font-weight: bold;
   				}
   			}
   		}
@@ -30,7 +44,7 @@ header._header {
 			background-image: url("/_moovweb_local_assets_/images/sprites.png");
 			background-position: 0px -638px;
 			margin-top: -34px;
-			margin-right: 5px;
+			margin-right: 11px;
 			height: 34px;
 			}
 		.bot[data-ur-state="enabled"] {
@@ -41,13 +55,21 @@ header._header {
   	color: $color2;
   }
   #Header {
+	@include grad-bg();
+	border-top: 1px solid #d74401;
+	padding: 0;
+	width: 100%;
+	min-height: 39px;
   	#Logo {
-		background-image: url('http://developer.moovweb.com/assets/tutorials/building_a_site/home_cropped.png');
-		text-indent: -2000px;
-		width: 100%;
+		//background-image: url('http://developer.moovweb.com/assets/tutorials/building_a_site/home_cropped.png');
 		min-height: 39px;
-		background-position: 0px -4px;
-		background-size: 100%;
+		a {
+			color: #fff;
+			text-decoration: none;
+			@include txt-shadow();
+			font-size: .8em;
+			padding: 5px 0 0 5px;
+		}
 		h1 {
 			margin:0;
 			a {
@@ -58,22 +80,26 @@ header._header {
 		}
 		a.bot1 {
 			float: right;
-			width: 30px;
-			height: 30px;
+			width: 39px;
 			position: absolute;
 			right: 11px;
 			top: 0;
 			text-indent: -2000px;
-		 }
+			background-image: url("/_moovweb_local_assets_/images/sprites.png");
+			background-position: 0 39px;
+			height: 34px;
+			}
 		 a.bot2 {
-		 	right: 55px;
-		 	float: right;
-			width: 30px;
-			height: 30px;
+			float: right;
+			width: 39px;
 			position: absolute;
+			right: 55px;
 			top: 0;
 			text-indent: -2000px;
-		 }
+			background-image: url("/_moovweb_local_assets_/images/sprites.png");
+			background-position: 0 -276px;
+			height: 35px;
+			}
 		}
   .sprites-search {
   width: 98%;

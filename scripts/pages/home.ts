@@ -1,5 +1,8 @@
  $('./body') {
  	attribute("class", "_home")
+ 		$('.//div[contains(@class,"QuickView")]') {
+ 					attribute("class","none")
+ 					}
  	$('./div[@id="Container"]') {
  		$('.//span[contains(@class, "FeedLink")]') {
  			remove()
@@ -11,6 +14,7 @@
  				attribute("data-ur-carousel-component","scroll_container")
  				$('./li') {
  					attribute("data-ur-carousel-component","item")
+ 					
  				}
  			}
  		}
@@ -25,4 +29,5 @@
  			}
  		}
  	}
+
  }

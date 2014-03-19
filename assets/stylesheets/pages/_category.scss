@@ -10,6 +10,29 @@
  	#Outer {
  		#Wrapper {
  			.Content {
+ 				.CategoryContent {
+ 					ul.ProductList {
+ 						margin:10px 0;
+ 						padding: 0;
+ 						li{ 
+ 							margin:10px 0;
+ 							padding: 2%;
+ 							border-top:dotted 1px $color1;
+ 							float: left;
+ 							width: 96%;
+	 						.ProductActionAdd a{
+	 							@include shadow();
+	 							@include grad-bg();
+	 							padding: 5px;
+	 							color: $color4 !important;
+	 							text-decoration: none;
+	 							float: right;
+	 							font-weight: bold;
+	 						}
+ 						}
+ 						
+ 					}
+ 				}
  				.Block.Moveable.Panel {
  					width: 90%;
  					padding: 2%;
@@ -29,6 +52,29 @@
  						margin-top: 10px;
  					}
  					.BlockContent {
+ 						.CategoryDescription {
+ 							background-color: $color3;
+ 							color: $color4;
+							padding: 5px;
+							text-decoration: none;
+							font-weight: bold;
+ 						}
+ 						.SubCategoryList {
+ 							ul {
+ 								margin:0 0 10px 0;
+ 								padding:0;
+ 								li {
+ 									background-color: $color1;
+ 									border-bottom:solid 1px $color4;
+ 									a {
+ 										color: $color4;
+ 										padding: 5px;
+ 										text-decoration: none;
+ 										font-weight: bold;
+ 									}
+ 								}
+ 							}
+ 						}
  						.ProductMain {
  							margin:4% 2%;
  							padding:2%;
@@ -54,9 +100,7 @@
  						}
  						ul {
  							li {
- 								div.QuickViewBtn {
- 									opacity: 0;
- 								}
+ 								
  								div {
  									float: left;
  									width: 90%;

@@ -33,6 +33,11 @@ match($status) {
       }
       else() {
         log("--> No page match in mappings.ts")
+        $('.//select[@name="sort"]'){
+          $('/html') {
+          @import pages/category.ts
+          }
+        }
       }
     }
   }

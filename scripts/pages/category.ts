@@ -1,21 +1,26 @@
  $('./body') {
- 	attribute("class", "_category")
-
-
- $('.//div[@id="CategoryContent"]') {
- 	$('.//ul[@class="ProductList "]') {
- 		wrap("div", class:"wdiv")
- 	}
-
-		$('.//div[@class="wdiv"]') {
- 			attributes(data-ur-set:"carousel", data-ur-carousel-component: "view_container", data-ur-fill: "2")
- 			inject('<div class="add-top"><div data-ur-carousel-component="dots"></div></div>')
- 			$('./ul[@class="ProductList "]') {
- 				attribute("data-ur-carousel-component","scroll_container")
- 				$('./li') {
- 					attribute("data-ur-carousel-component","item")
- 				}
+	attribute("class", "_category")
+ 	$('.//div[@id="CategoryHeading"]') {
+ 		$('./div[@class="BlockContent"]') {
+ 			$('./div[@class="CategoryDescription"]'){
+ 				move_here('ancestor::div[@class="BlockContent"]/div[contains(@class, "SortBox")]', 'top')
  			}
+ 		}
+ 	}
+	$('.//div[contains(@class,"QuickView")]') {
+ 					attribute("class","none")
+ 					}
+
+
+ 	$('.//div[@id="CategoryContent"]') {
+ 		$('.//ul[@class="ProductList "]') {
+ 			wrap("div", class:"wdiv")
+ 			$('.//div[@class="ProductCompareButton"]') {
+ 				remove()
+ 			}
+ 	}
+ 		$('.//div[@class="CompareButton"]') {
+ 			remove();
  		}
  }
  	$('./div[@id="Container"]') {
