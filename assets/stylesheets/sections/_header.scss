@@ -96,8 +96,8 @@ header._header {
 			}
 		}
   .search {
-  width: 98%;
-  padding:1%;
+  width: 100%;
+  padding:1% 0;
   @include background(linear-gradient(top, #852201, #6a1b00));
   float: left;
   
